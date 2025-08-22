@@ -7,6 +7,8 @@
   background-color: #fafafa;
   color: rgb(0, 0, 0);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  width: 100%;
 }
 
 .img {
@@ -70,7 +72,7 @@
   list-style: none;
   padding: 10px;
   border-radius: 5px;
-  z-index: 1;
+  z-index: 101;
   min-width: 150px;
 }
 
@@ -133,6 +135,13 @@
   display: none;
   font-size: 24px;
   cursor: pointer;
+  align-self: center;
+  justify-self: flex-end;
+  margin-left: auto;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: inherit;
 }
 
 @media (max-width: 768px) {
@@ -146,11 +155,35 @@
     background-color: #fafafa;
     padding: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 101;
   }
 
   .header {
     padding: 10px 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    order: 3;
+    margin-left: auto;
+    position: relative;
+    z-index: 102;
+  }
+
+  .logoContainer {
+    order: 1;
+  }
+
+  .nav {
+    order: 2;
+    display: none;
+  }
+
+  .navOpen {
+    display: block;
   }
 
   .navOpen .listContainer {
@@ -159,18 +192,6 @@
 
   .contactContainer {
     display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .navOpen {
-    display: block;
   }
 
   .dropdownMenu {
