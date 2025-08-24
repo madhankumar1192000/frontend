@@ -3,6 +3,11 @@ import styles from "./Home.module.css";
 import goa from "../../assets/goa.jpg";
 import hyderabad from "../../assets/hyderabad.jpg";
 import kerala from "../../assets/kerala.jpg";
+import TourCategories from "../../components/TourCategories/TourCategories";
+import UpcomingEvents from "../../components/UpcomingEvents/UpcomingEvents";
+import PopularTreks from "../../components/PopularTreks/PopularTreks";
+import TripsNearBangalore from "../../components/TripsNearBangalore/TripsNearBangalore";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -119,6 +124,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <TourCategories />
+      <UpcomingEvents />
+      <PopularTreks />
+      <TripsNearBangalore />
+      <WhyChooseUs />
     </>
   );
 };
