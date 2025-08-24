@@ -8,6 +8,11 @@ import UpcomingEvents from "../../components/UpcomingEvents/UpcomingEvents";
 import PopularTreks from "../../components/PopularTreks/PopularTreks";
 import TripsNearBangalore from "../../components/TripsNearBangalore/TripsNearBangalore";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+import TreksAndTripsNearBengaluru from "../../components/TreksAndTripsNearBengaluru/TreksAndTripsNearBengaluru";
+import FAQ from "../../components/FAQ/FAQ";
+import CorporateClients from "../../components/CorporateClients/CorporateClients";
+import Testimonials from "../../components/Testimonials/Testimonials";
+import EmailSubscribe from "../../components/EmailSubscribe/EmailSubscribe";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -90,7 +95,7 @@ const Home = () => {
           <button className={styles.navArrow} onClick={prevSlide}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
-                d="M18 15L12 9L6 15"
+                d="M18 15L12 9L6 L5"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -130,6 +135,11 @@ const Home = () => {
       <PopularTreks />
       <TripsNearBangalore />
       <WhyChooseUs />
+      <TreksAndTripsNearBengaluru />
+      <FAQ />
+      <CorporateClients />
+      <Testimonials />
+      <EmailSubscribe />
     </>
   );
 };

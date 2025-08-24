@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './WhyChooseUs.module.css';
+import { FaGem, FaShieldAlt, FaUserTie } from 'react-icons/fa';
 
 interface FeatureProps {
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
 
-const FeatureItem: React.FC<FeatureProps> = ({ title, description }) => {
+const FeatureItem: React.FC<FeatureProps> = ({ icon, title, description }) => {
   return (
     <div className={styles.featureItem}>
-      <div className={styles.featureIcon}></div>
+      <div className={styles.featureIcon}>{icon}</div>
       <div className={styles.featureContent}>
         <h3 className={styles.featureTitle}>{title}</h3>
         <p className={styles.featureDescription}>{description}</p>
@@ -21,18 +23,22 @@ const FeatureItem: React.FC<FeatureProps> = ({ title, description }) => {
 const WhyChooseUs: React.FC = () => {
   const features = [
     {
+      icon: <FaGem />,
       title: 'Exclusive Trip',
-      description: 'Handpicked trips to explore Karnataka\'s hidden gems.'
+      description: "Handpicked trips to explore Karnataka's hidden gems."
     },
     {
+      icon: <FaShieldAlt />,
       title: 'Safety First Always',
       description: 'We prioritize your safety on every adventure.'
     },
     {
+      icon: <FaUserTie />,
       title: 'Professional Guide',
       description: 'Expert guides to enhance your travel experience.'
     },
     {
+      icon: <FaUserTie />,
       title: 'Professional Guide',
       description: 'Expert guides to enhance your travel experience.'
     }
@@ -53,6 +59,7 @@ const WhyChooseUs: React.FC = () => {
               {features.map((feature, index) => (
                 <FeatureItem
                   key={index}
+                  icon={feature.icon}
                   title={feature.title}
                   description={feature.description}
                 />
