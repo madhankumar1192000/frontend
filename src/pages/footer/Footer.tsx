@@ -206,8 +206,7 @@ const Footer: React.FC = () => {
             <li className={styles.addressListItem}>
               <PhoneIcon />
               <div className={styles.addressTextContainer}>
-                <span>9632996995</span>
-                <span>9632881298</span>
+                <span>8328212741</span>
               </div>
             </li>
             <li className={styles.addressListItem}>

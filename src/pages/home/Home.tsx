@@ -13,7 +13,6 @@ import FAQ from "../../components/FAQ/FAQ";
 import CorporateClients from "../../components/CorporateClients/CorporateClients";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import EmailSubscribe from "../../components/EmailSubscribe/EmailSubscribe";
-import Footer from "../footer/Footer";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -130,7 +129,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <TourCategories />
       <UpcomingEvents />
       <PopularTreks />
@@ -141,7 +139,6 @@ const Home = () => {
       <CorporateClients />
       <Testimonials />
       <EmailSubscribe />
-      <Footer />
     </>
   );
 };
